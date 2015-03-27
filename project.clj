@@ -10,10 +10,10 @@
   :test-paths ["spec/clj"]
 
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/clojurescript "0.0-2511" :scope "provided"]
+                 [org.clojure/clojurescript "0.0-3153" :scope "provided"]
                  [ring "1.3.2"]
-                 [ring/ring-defaults "0.1.3"]
-                 [compojure "1.3.1"]
+                 [ring/ring-defaults "0.1.4"]
+                 [compojure "1.3.2"]
                  [enlive "1.1.5"]
                  [om "0.8.0-rc1"]
                  [environ "1.0.0"]]
@@ -36,10 +36,10 @@
   :profiles {:dev {:source-paths ["env/dev/clj"]
                    :test-paths ["test/clj"]
 
-                   :dependencies [[figwheel "0.2.1-SNAPSHOT"]
-                                  [figwheel-sidecar "0.2.1-SNAPSHOT"]
-                                  [com.cemerick/piggieback "0.1.3"]
-                                  [weasel "0.4.2"]]
+                   :dependencies [[figwheel "0.2.5"]
+                                  [figwheel-sidecar "0.2.5"]
+                                  [com.cemerick/piggieback "0.1.5"]
+                                  [weasel "0.6.0"]]
 
                    :repl-options {:init-ns ladder.server
                                   :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
